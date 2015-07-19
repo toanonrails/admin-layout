@@ -1,0 +1,9 @@
+vi:
+  layouts:
+    navigation:
+      home:     "Trang chủ"
+      profile:  "Trang cá nhân"
+      settings: "Cài đặt"
+      logout:   "Đăng xuất"
+
+  language: "Ngôn ngữ"

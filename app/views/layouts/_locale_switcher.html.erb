@@ -1,0 +1,9 @@
+<%= form_tag locale_switch_path, id: "locale" do %>
+  <%= t "language" %>:&nbsp;
+  <%= select_tag "next_locale",
+                 options_for_select(LANGUAGES, I18n.locale.to_s),
+                 onchange: "this.form.submit()"
+  %>
+  <%= submit_tag %>
+  <%= javascript_tag "$('#locale input').hide()" %>
+<% end %>

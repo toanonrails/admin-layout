@@ -2,8 +2,10 @@
 <footer>
   <div class="row">
     <div class="col-lg-12">
-      <p>&copy; 2015 Feel Good, Inc. All rights reserved.</p>
+      <span>&copy; 2015 Feel Good, Inc. All rights reserved.</span>
+      <%= render "layouts/locale_switcher" %>
     </div>
   </div>
 </footer>
+<br>
 <%= debug(params) if Rails.env.development? %>

@@ -3,5 +3,9 @@ Rails.application.routes.draw do
   get '', to: 'dashboard#index', as: '/'
   end
 
-  root 'home#index'
+  scope '(:locale)', locale: /en|vi/ do
+    root 'home#index'
+  end
+
+  post 'locale/switch'
 end
